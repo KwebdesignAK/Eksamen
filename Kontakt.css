@@ -1,0 +1,266 @@
+/* Grundlæggende styling for body */
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #F5F5F5;
+    }
+
+/* Styling af header */
+header {
+    display: flex;
+    justify-content: space-between; /* Fordeler logo og ikoner */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c2c2c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    }
+
+/* Logo-styling */
+header img {
+    height: 120px;
+    border-radius: 10px
+    }
+
+/* Container for links (Forside, Portfolio og Kontakt) - Centreret i header */
+.nav-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); /* Centrer dem præcist */
+    display: flex;
+    gap: 30px;
+    }
+
+/* Styling af Forside, Portfolio og Kontakt links */
+.nav-links a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 2px solid #FF6347;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+nav ul {
+    display: flex;
+    list-style: none
+    }
+
+/* Hover effekt på links */
+.nav-links a:hover {
+    background-color: #FF4500;
+    color: #fff;
+    }
+
+/* Container for social media ikoner */
+.social-icons {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    display: flex;
+    gap: 15px;
+    }
+
+.social-icons img {
+    height: 40px;
+    width: 40px;
+}
+
+/* Styling for banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #2c2c2c;
+    color: #F5F5F5;
+    padding: 15px;
+    }
+
+.banner h2 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center; /* Centrer teksten horisontalt i h2 */
+    }
+
+/* Billedet der skal vippes */
+.animation {
+    margin-left: 50px;
+    width: 75px;
+    height: 75px;
+    background-image: url('Images/Krus.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: shake 5s ease-in-out infinite; /* Animationen for vipning */
+    }
+
+/* Vippeanimation */
+@keyframes shake {
+         0% {
+        transform: rotateY(0deg); /* Start */
+        }
+        25% {
+        transform: rotateY(40deg); /* Vipp til højre */
+        }
+        50% {
+        transform: rotateY(0deg); /* Tilbage til start */
+        }
+        75% {
+        transform: rotateY(-40deg); /* Vipp til venstre */
+        }
+        100% {
+        transform: rotateY(0deg); /* Tilbage til start */
+        }
+    }
+
+/* Styling af content-sektionen */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #820000;
+    background-color: #FFFFFF;
+    }
+
+/* Billede under banner */
+main img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    }
+
+/* Baggrundsbillede efter banner */
+body {
+    background: url('Images/scene.jpg') no-repeat center center fixed;
+    background-size: cover;
+    }
+
+/* Grundlæggende styling for body */
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #F5F5F5;
+    }
+
+/* Container for kontaktformular */
+.contact-form-container {
+    max-width: 450px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #0000001a;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+
+/* Overskrift */
+.contact-form-container h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #820000;
+    }
+
+/* Styling af formularfelter */
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0 3px;
+    color: #820000;
+    }
+
+/* Input og textarea felter */
+.contact-form input, 
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #820000;
+    background-color: #F5F5F5;
+    font-size: 16px;
+    color: #333;
+    }
+
+/* Knapper */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    }
+
+.send-btn, .reset-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+/* Styling for send knap */
+.send-btn {
+    background-color: #FF4500;
+    color: #fff;
+    }
+
+.send-btn:hover {
+    background-color: #820000;
+    }
+
+/* Styling for fortryd knap */
+.reset-btn {
+    background-color: #820000;
+    color: #fff;
+    }
+
+.reset-btn:hover {
+    background-color: #FF6347;
+    }
+
+.reset-btn:focus {
+    outline: none;
+    }
+
+/* Responsiv design */
+@media (max-width: 600px) {
+    .contact-form-container {
+        padding: 15px;
+    }
+
+    .send-btn, .reset-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    }
+/* Styling af footer */
+footer.footer {
+    background-color: #2c2c2c;
+    color: #F5F5F5;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centrerer indholdet horisontalt */
+    height: 100px;
+    }
+
+/* Animation for at få teksten til at komme ind fra venstre */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%); /* Startposition til venstre */
+        opacity: 0; /* Start med at være usynlig */
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1; /* Gør teksten synlig */
+    }
+    }
+
+/* Styling af teksten i footeren */
+footer.footer p {
+    animation: slideInFromLeft 8s ease-out forwards; 
+    }
+

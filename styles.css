@@ -1,0 +1,186 @@
+/* Grundlæggende styling for body */
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #F5F5F5;
+    }
+
+/* Styling af header */
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c2c2c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    }
+
+/* Logo-styling */
+header img {
+    height: 120px;
+    border-radius: 10px
+    }
+
+/* Container for links (Forside, Portfolio og Kontakt) - Centreret i header */
+.nav-links {
+    position: absolute;
+    top: 50%; /* links centreret vertikalt */
+    left: 50%; /* links centreret horisontalt */
+    transform: translateX(-50%) translateY(-50%); /* Centrer dem præcist */
+    display: flex;
+    gap: 30px; /* Afstand mellem links */
+    }
+
+/* Styling af links */
+.nav-links a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 2px solid #D2691E;
+    border-radius: 5px;
+    }
+
+/* Hover effekt på links */
+.nav-links a:hover {
+    background-color: #FF4500;
+    color: #fff;
+    }
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    }
+
+
+/* Container for social media ikoner */
+.social-icons {
+    position: absolute;
+    top: 10%; /* Vertikalt centreret */
+    right: 2%; /* Placeret til højre */
+    display: flex;
+    gap: 15px; /* Afstand mellem ikonerne */
+    }
+
+.social-icons img {
+    height: 40px;
+    width: 40px;
+    }
+
+/* Styling af banner */
+.banner {
+    display: flex;
+    justify-content: center; /* Centrerer både tekst og animation horisontalt */
+    background-color: #2c2c2c;
+    color: #F5F5F5;
+    padding: 15px;
+    }
+
+
+/* Styling for den nederste linje */
+.banner h2 .second-line {
+    display: block;  /* Gør denne del til et blok-element, så den kan centreret */
+    text-align: center;  /* Centrer den nederste linje */
+    margin-top: 15px;  /* Linjeafstand */
+    }
+
+/* Ændre skriftstørrelsen for hele h2 */
+.banner h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    }
+
+ /* Styling af content-sektionen */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 2px solid #820000;
+    background-color: #FFFFFF;
+    }
+
+.content img {
+    width: 100%;
+    height: auto;  
+    }
+
+/* Baggrundsbillede under banneret */
+.background-container {
+    background-image: url(Images/koncert2.webp);
+    background-size: cover; 
+    background-position: center;
+    padding: 50px 50px; /* padding omkring containerne */
+    display: flex;
+    justify-content: center; /* Centrer indholdet vandret */
+    gap: 25px; /* Afstand mellem containerne */
+    }
+
+/* Containerne til tekst */
+.text-container {
+    padding: 20px;
+    width: 250px; /* Bredde på containerne */
+    height: 250px; /* Højde på containerne */
+    display: flex;
+    justify-content: center; /* Centrer teksten vandret */
+    align-items: center; /* Centrer teksten lodret */
+    color: #F5F5F5;
+    border-radius: 360px; /* Afrundede hjørner */
+    }
+
+/* Container 1 med farven #FF4500 */
+.container-1 {
+    background-color: #820000;
+    }
+
+/* Container 2 med farven #D2691E */
+.container-2 {
+    background-color: #D2691E;
+    }
+
+/* Container 3 med farven #820000 */
+.container-3 {
+    background-color: #820000;
+    }
+
+    /* Container 4 med farven #FF4500 */
+.container-4 {
+    background-color: #D2691E;
+    }
+
+/* Styling for footer */
+footer {
+    background-color: #2c2c2c; 
+    color: #F5F5F5; 
+    padding: 10px 0; /* Afstand omkring footer */
+    }
+
+/* Container for tekst i footer */
+.footer-content {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    text-align: center; 
+    font-size: 12px;
+    }
+
+/* Styling af 'om mig' linket */
+.second-line a {
+    color: #FF4500; 
+    font-size: 18px; 
+    }
+
+/* Baggrundsbillede efter footer */
+body {
+    background: url('Images/koncert2.webp') no-repeat center center fixed;
+    background-size: cover;
+    }
+
+/* Billede under footer */
+main img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    }    
+

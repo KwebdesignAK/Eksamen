@@ -1,0 +1,249 @@
+/* Grundlæggende styling for body */
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #F5F5F5;
+    }
+
+/* Styling af header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c2c2c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    }
+
+/* Logo-styling */
+header img {
+    height: 120px;
+    border-radius: 10px
+    }
+
+/* Container for links (Forside, Portfolio og Kontakt) - Centreret i header */
+.nav-links {
+    position: absolute;
+    top: 50%; /* Placér linksene i midten vertikalt */
+    left: 50%; /* Centrer linksene horisontalt */
+    transform: translateX(-50%) translateY(-50%); /* Centrer dem præcist */
+    display: flex;
+    gap: 30px;
+    }
+
+/* Styling af links */
+.nav-links a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 2px solid #D2691E;
+    border-radius: 5px;
+   }
+
+/* Hover effekt på links */
+.nav-links a:hover {
+    background-color: #FF4500;
+    color: #fff;
+    }
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    }
+
+
+/* Container for social media ikoner */
+.social-icons {
+    position: absolute;
+    top: 10%; /* Vertikalt centreret */
+    right: 2%; /* Placeret til højre */
+    display: flex;
+    gap: 15px; /* Afstand mellem ikonerne */
+    }
+
+.social-icons img {
+    height: 40px;
+    width: 40px;
+    }
+
+/* Styling af banner */
+.banner {
+    display: flex;
+    justify-content: center; /* Centrerer både tekst og animation horisontalt */
+    background-color: #2c2c2c;
+    color: #F5F5F5;
+    padding: 25px;
+    align-items: flex-start; /* Justerer vertikal placering af indholdet (ikke centreret) */
+    }
+
+/* Styling for h2 elementet */
+.banner h2 {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.6;
+    }
+
+/* Styling for den nederste linje */
+.banner h2 .second-line {
+    display: block;  /* Gør denne del til et blok-element, så den kan centreret */
+    text-align: center;  /* Centrer den nederste linje */
+    }
+
+
+/* Baggrundsbillede under banneret */
+.background-container {
+    background-image: url(Images/koncert3.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    }
+
+/* Containerne for tekst-containere/portræt - generelt */
+.text-container {
+    display: flex;
+    justify-content: center;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 1%
+    }
+
+/* Container 2 "tekst om mig"*/
+.container-2 {
+    background-color: #D2691E;
+    font-size: 16px;
+    width: 250px;
+    height:250px;
+    border-radius: 360px;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    position: absolute;
+    right: 65%
+    }
+
+/* Container 3 "Hej, jeg..." */
+.container-3 {
+    background-color: #820000;
+    font-size: 18px;
+    width: 120px;
+    height: 120px;
+    border-radius: 360px;
+    margin-top: 20px;
+    align-items: center;
+    position: absolute;
+    right: 85%
+    }
+
+    /* Container 4 "min passion" */
+.container-4 {
+    background-color: #D2691E;
+    font-size: 20px; 
+    width: 250px;
+    height: 250px;
+    border-radius: 360px;
+    margin-top: 20px;
+    align-items: center;
+    position: absolute;
+    left: 65%
+    }
+
+/* Container 5 "idérig.. */
+.container-5 {
+    background-color: #820000;
+    font-size: 18px;
+    width: 120px;
+    height: 120px;
+    border-radius: 360px;
+    margin-top: 140px;
+    align-items: center;
+    position: absolute;
+    left: 85%
+    }
+
+/* Container 6 "se mit cv" */
+.container-6 {
+    background-color: #FF4500;
+    font-size: 12px;
+    width: 100px;
+    height: 100px;
+    border-radius: 360px;
+    margin-top: 50px;
+    align-items: center;
+    position: absolute;
+    right: 1200px
+    }    
+
+/* Container 7 "BLA  BLA..." */
+.container-7 {
+    background-color: #FF4500;
+    font-size: 18px;
+    width: 100px;
+    height: 100px;
+    border-radius: 360px;
+    margin-bottom: 250px;
+    align-items: center;
+    position: absolute;
+    left: 65%
+    }
+
+
+/* Ændre skriftstørrelsen for hele h2 */
+.banner h2 {
+    font-size: 22px;
+    line-height: 1;
+    }
+
+
+/* Styling for footer */
+.footer {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    }
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;  /* Centrerer indholdet */
+    }
+
+/* Container til billederne */
+.footer-images {
+    display: flex;  /* flexbox til at arrangere billederne ved siden af hinanden */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    }
+
+/* Billederne i footeren */
+.footer-image {
+    width: 40px;
+    height: auto;  /*Billedernes proportioner */
+    }
+
+
+/* Styling af tekstfeltet */
+.text-field p {
+    font-size: 36px;
+    margin-bottom: 20px;
+    }
+
+/* Billede under banner */
+.main img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    }
+
+/* Baggrundsbillede efter banner */
+body {
+    background: url('Images/koncert3.webp') no-repeat center center fixed;
+    background-size: cover;
+    }

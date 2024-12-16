@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjemmeside Design</title>
+    <link rel="stylesheet" href="Kontakt.css">
+</head>
+<body>
+    <header>
+        <img src="Images/Logo-design.PNG" alt="Logo">
+        
+    <!-- Links: Portfolio og Kontakt -->
+        <div class="nav-links">
+            <a href="index.html">Forside</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Kontakt.html">Kontakt</a>
+        </div>
+        
+    <!-- Social Media ikoner og links -->
+<div class="social-icons">
+    <a href="https://www.instagram.com/callingnaturedk/" target="_blank">
+        <img src="Images/Icon-Instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.linkedin.com/in/anja-kristensen-kwebdesign" target="_blank">
+        <img src="Images/Icon-linkedIn.png" alt="LinkedIn">
+    </a>
+</div>
+
+    </header>
+
+    <!-- Banner Sektion -->
+    <div class="banner">
+        <h2>Kontakt mig gerne for et uforpligtende møde eller hvis du har spørgsmål</h2>
+        <div class="animation"></div>
+    </div>
+
+    <!-- Kontaktformular -->
+    <div class="contact-form-container">
+        <h2>Kontaktformular</h2>
+        <form action="send-email.php" method="POST" class="contact-form">
+            <label for="name">Navn:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">E-mailadresse:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Besked:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <div class="button-group">
+                <button type="submit" class="send-btn">Send</button>
+                <button type="reset" class="reset-btn">Fortryd</button>
+            </div>
+        </form>
+    </div>
+
+ <!-- Footer sektion -->
+ <footer class="footer">
+    <p>Jeg glæder mig til at høre fra dig.</p>
+</footer>
+
+</body>
+
+</HTMl>
