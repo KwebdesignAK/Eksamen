@@ -1,3 +1,21 @@
+/* Media Queries - visning på flere devices */
+body {
+    font-size: 16px;
+}
+
+/* CSS for skærme mindre end 600px (mobiltelefoner) */
+@media (max-width: 599px) {
+    body {
+        font-size: 8px;
+               
+       }
+    .nav-links {
+        margin-top: 80px;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+}
+
 /* Grundlæggende styling for body */
 body {
     margin: 0;
@@ -32,6 +50,8 @@ header img {
     gap: 30px;
     }
 
+    
+
 /* Styling af Forside, Portfolio og Kontakt links */
 .nav-links a {
     text-decoration: none;
@@ -43,12 +63,43 @@ header img {
     border-radius: 5px;
     }
 
+ /* Responsive Design: Small Screens */
+ @media (max-width: 520px) {
+    .text-container {
+        margin-top: 5%;
+        width: 40px;
+        height: 40px;
+        border-radius: 360px; 
+        }
+  }
+
 /* Hover effekt på links */
 .nav-links a:hover {
     background-color: #ff4500;
     color: #fff;
     }
 
+    /* Responsive Design: Small Screens */
+@media (max-width: 520px) {
+    .nav-links {
+        left: 40%; /* Centrer links horisontalt */
+        font-size: 10px;
+      text-align: center;
+      margin-top: 8%;
+      margin-left: 65px;
+      width: 455px;     
+      gap: 15px;
+    }
+  }
+/* Responsive Design: Small Screens */
+@media (max-width: 520px) {
+    .banner h2 {
+      font-size: 10px;
+      text-align: center;
+      margin-top: 6%;
+      width: 455px;     
+    }
+  }
 nav ul {
     display: flex;
     list-style: none

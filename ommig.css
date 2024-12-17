@@ -1,3 +1,25 @@
+/* Media Queries - visning på flere devices */
+body {
+    font-size: 16px;
+    background-color: #F5F5F5
+}
+
+/* CSS for skærme mindre end 600px (mobiltelefoner) */
+@media (max-width: 599px) {
+    body {
+        font-size: 14px;
+        background-color: #F5F5F5;
+    }
+}
+
+/* CSS for skærme større end 1025px (tablets og desktops) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+        background-color: #F5F5F5
+    }
+}
+
 /* Grundlæggende styling for body */
 body {
     margin: 0;
@@ -141,7 +163,7 @@ nav ul {
     right: 85%
     }
 
-    /* Container 4 "min passion" */
+    /* Container 4 "bla" */
 .container-4 {
     background-color: #D2691E;
     font-size: 20px; 
@@ -154,7 +176,7 @@ nav ul {
     left: 65%
     }
 
-/* Container 5 "idérig.. */
+/* Container 5 "bla bla */
 .container-5 {
     background-color: #820000;
     font-size: 18px;
@@ -167,7 +189,7 @@ nav ul {
     left: 85%
     }
 
-/* Container 6 "se mit cv" */
+/* Container 6 "bla bla" */
 .container-6 {
     background-color: #FF4500;
     font-size: 12px;
@@ -180,7 +202,7 @@ nav ul {
     right: 1200px
     }    
 
-/* Container 7 "BLA  BLA..." */
+/* Container 7 "bla bla..." */
 .container-7 {
     background-color: #FF4500;
     font-size: 18px;
@@ -207,6 +229,7 @@ nav ul {
     color: white;
     padding: 20px;
     text-align: center;
+    height: auto;
     }
 
 .footer-content {
@@ -214,7 +237,7 @@ nav ul {
     margin: 0 auto;  /* Centrerer indholdet */
     }
 
-/* Container til billederne */
+/* Container til billederne i footer */
 .footer-images {
     display: flex;  /* flexbox til at arrangere billederne ved siden af hinanden */
     justify-content: center;
@@ -228,21 +251,13 @@ nav ul {
     height: auto;  /*Billedernes proportioner */
     }
 
-
-/* Styling af tekstfeltet */
+/* Styling af tekstfeltet i footer */
 .text-field p {
     font-size: 36px;
     margin-bottom: 20px;
     }
 
-/* Billede under banner */
-.main img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    }
-
-/* Baggrundsbillede efter banner */
+        /* Baggrundsbillede efter banner */
 body {
     background: url('Images/koncert3.webp') no-repeat center center fixed;
     background-size: cover;

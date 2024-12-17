@@ -1,3 +1,21 @@
+  /* Media Queries - visning på flere devices */
+  body {
+    font-size: 16px;
+}
+
+/* CSS for skærme mindre end 600px (mobiltelefoner) */
+@media (max-width: 599px) {
+    body {
+        font-size: 8px;
+               
+       }
+    .nav-links {
+        margin-top: 80px;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+}
+
 /* Grundlæggende styling for body */
 body {
     margin: 0;
@@ -54,7 +72,6 @@ nav ul {
     padding-left: 0;
     }
 
-
 /* Container for social media ikoner */
 .social-icons {
     position: absolute;
@@ -86,6 +103,22 @@ nav ul {
     margin-top: 15px;  /* Linjeafstand */
     }
 
+      
+  /* Responsive Design: Small Screens */
+  @media (max-width: 515px) {
+    .banner {
+        width: 453px
+        }
+  }
+      
+  /* Responsive Design: Small Screens */
+  @media (max-width: 515px) {
+    .banner h2 .second-line {
+      width: 453px
+      
+    }
+  }
+
 /* Ændre skriftstørrelsen for hele h2 */
 .banner h2 {
     font-size: 24px;
@@ -93,6 +126,16 @@ nav ul {
     text-align: center;
     margin: 0;
     }
+
+/* Responsive Design: Small Screens */
+@media (max-width: 520px) {
+    .banner h2 {
+      font-size: 10px;
+      text-align: center;
+      margin-top: 5%;
+      width: 455px;     
+    }
+  }
 
  /* Styling af content-sektionen */
 .content {
@@ -112,23 +155,35 @@ nav ul {
     background-image: url(Images/koncert2.webp);
     background-size: cover; 
     background-position: center;
-    padding: 50px 50px; /* padding omkring containerne */
+    padding: 50px 50px;
     display: flex;
-    justify-content: center; /* Centrer indholdet vandret */
-    gap: 25px; /* Afstand mellem containerne */
+    justify-content: center; 
+    gap: 25px; 
     }
 
 /* Containerne til tekst */
 .text-container {
     padding: 20px;
-    width: 250px; /* Bredde på containerne */
-    height: 250px; /* Højde på containerne */
+    width: 250px;
+    height: 250px;
     display: flex;
-    justify-content: center; /* Centrer teksten vandret */
-    align-items: center; /* Centrer teksten lodret */
+    justify-content: center; 
+    align-items: center; 
     color: #F5F5F5;
-    border-radius: 360px; /* Afrundede hjørner */
+    border-radius: 360px; 
     }
+
+    /* Responsive Design: Small Screens */
+@media (max-width: 520px) {
+    .text-container {
+        margin-top: 5%;
+        width: 40px;
+        height: 40px;
+        border-radius: 360px; 
+        }
+  }
+
+     
 
 /* Container 1 med farven #FF4500 */
 .container-1 {
@@ -151,36 +206,28 @@ nav ul {
     }
 
 /* Styling for footer */
-footer {
+.footer {
     background-color: #2c2c2c; 
     color: #F5F5F5; 
-    padding: 10px 0; /* Afstand omkring footer */
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
     }
+      
+        /* Responsive Design: Small Screens */
+@media (max-width: 520px) {
+    .footer {
+        height: auto;
+        width: 455px;
+        font-size: 8px;
+        text-align: center;
+       
+        }
+     }
 
-/* Container for tekst i footer */
-.footer-content {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    text-align: center; 
-    font-size: 12px;
-    }
-
-/* Styling af 'om mig' linket */
+    /* Styling af 'om mig' linket */
 .second-line a {
     color: #FF4500; 
-    font-size: 18px; 
     }
-
-/* Baggrundsbillede efter footer */
-body {
-    background: url('Images/koncert2.webp') no-repeat center center fixed;
-    background-size: cover;
-    }
-
-/* Billede under footer */
-main img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    }    
 
